@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal portfolio website" />
+  <title>GAB — Personal Portfolio</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="nav">
+    <a href="#home" class="brand">GAB</a>
+
+    <button class="menu-toggle" aria-label="Open menu">☰</button>
+
+    <nav class="nav-links">
+      <a class="active" href="#home">home</a>
+      <a href="#about">about</a>
+      <!-- <a href="#services">services</a> -->
+      <a href="#portfolio">portfolio</a>
+      <a href="#contact">contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="home" class="hero section-wrap">
+      <div class="hero-copy">
+        <p class="small-label">Hello, I'm</p>
+        <h1>GABRIEL <span>MACAYAON</span></h1>
+        <h2>Photographer/Videographer<span class="cursor">|</span></h2>
+        <p class="hero-description">
+          Through my lens, I turn ordinary moments into unforgettable visual stories.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#portfolio" class="btn btn-light">View Portfolio</a>
+          <a href="#contact" class="text-link">Contact Me <span>→</span></a>
+        </div>
+      </div>
+
+      <div class="hero-photo">
+        <img
+          class="portrait-image"
+          src="img/1000146687.webp"
+          alt="Portrait of Gabriel Macayaon"
+        />
+        <div class="photo-glow"></div>
+      </div>
+
+      <!-- <div class="social-bar">
+        <a href="#" aria-label="GitHub">GH</a>
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="LinkedIn">in</a>
+        <a href="#" aria-label="Behance">Be</a>
+      </div> -->
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section section-wrap about">
+      <div class="about-photo">
+        <img
+          class="about-image"
+          src="img/1786711511110.jpg"
+          alt="Gabriel Macayaon profile"
+        />
+      </div>
+
+      <div class="about-content">
+        <div>
+          <h2 class="section-title">About<span>.</span></h2>
+          <p>
+            I'm a passionate photographer and videographer who loves turning real moments into compelling visual stories. Whether it's a photograph or a film, I aim to capture the emotion, personality, and details that make every story unique.
+          </p>
+          <p>
+          When I'm not behind the camera, I enjoy exploring new places, finding new perspectives, and discovering inspiration for my next shot.
+          </p>
+        </div>
+
+        <aside class="hire-box">
+          <h3>Hire me</h3>
+          <div class="red-line"></div>
+          <p>
+            I'm open for collaborations. I can help you with websites,
+            portfolios, landing pages and other digital projects.
+          </p>
+          <a href="#contact">→ Hire me</a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <!-- <section id="services" class="section section-wrap services">
+      <div class="services-intro">
+        <h2 class="section-title">Services<span>.</span></h2>
+        <p>
+          Here are some of the services I can provide,
+          based on my skills and experience.
+        </p>
+        <a href="#contact">→ Hire me</a>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card purple">
+          <div class="service-icon">&lt;/&gt;</div>
+          <div>
+            <div class="card-heading">
+              <h3>Web Development</h3>
+              <span>Very Good</span>
+            </div>
+            <p>
+              I build responsive and fast websites using modern
+              web technologies.
+            </p>
+            <small>HTML5, CSS3, JavaScript, React, WordPress</small>
+          </div>
+        </article>
+
+        <article class="service-card gray">
+          <div class="service-icon">UI</div>
+          <div>
+            <div class="card-heading">
+              <h3>UI/UX Design</h3>
+              <span>Very Good</span>
+            </div>
+            <p>
+              I design modern and user-friendly interfaces that
+              provide a great user experience.
+            </p>
+            <small>Figma, Photoshop, Illustrator</small>
+          </div>
+        </article>
+
+        <article class="service-card orange">
+          <div class="service-icon">✦</div>
+          <div>
+            <div class="card-heading">
+              <h3>Digital Design</h3>
+              <span>Good</span>
+            </div>
+            <p>
+              I create visual content for digital platforms that
+              helps brands stand out.
+            </p>
+            <small>Illustrator, Photoshop</small>
+          </div>
+        </article>
+
+        <article class="service-card brown">
+          <div class="service-icon">▣</div>
+          <div>
+            <div class="card-heading">
+              <h3>Photo & Video</h3>
+              <span>Good</span>
+            </div>
+            <p>
+              I edit photos and videos to make them look professional
+              and engaging.
+            </p>
+            <small>Photoshop, Lightroom, Premiere Pro</small>
+          </div>
+        </article>
+      </div>
+    </section> -->
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="section section-wrap portfolio">
+      <div class="portfolio-heading">
+        <h2 class="section-title">My Works<span>.</span></h2>
+        <p>These are some of the projects I have worked on so far.</p>
+      </div>
+
+      <div class="filters">
+        <button class="filter active" data-filter="all">Photography</button>
+        <button class="filter" data-filter="design">Videography</button>
+        <!-- <button class="filter" data-filter="development">Video Editing</button> -->
+        <!-- <button class="filter" data-filter="branding">Branding</button> -->
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card" data-category="development">
+          <a href="img/photography/SAVE_20260716_203711.jpg" target="_blank" rel="noopener noreferrer" class="project-visual visual-one">
+            <img src="img/photography/SAVE_20260716_203711.jpg" alt="Corporate photography" />
+          </a>
+          <div class="project-info">
+            <p>Img</p>
+            <h3>Corporate</h3>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="design">
+          <a href="img/photography/DSC03971.jpg" target="_blank" rel="noopener noreferrer" class="project-visual visual-two">
+            <img src="img/photography/DSC03971.jpg" alt="Family portrait photography" />
+          </a>
+          <div class="project-info">
+            <p>Img</p>
+            <h3>Family Portraits</h3>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="branding">
+          <a href="img/photography/DSC03725.jpg" target="_blank" rel="noopener noreferrer" class="project-visual visual-three">
+            <img src="img/photography/DSC03725.jpg" alt="Child photography" />
+          </a>
+          <div class="project-info">
+            <p>Img</p>
+            <h3>Kiddie</h3>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="development">
+          <a href="img/photography/20260716_131203.jpg" target="_blank" rel="noopener noreferrer" class="project-visual visual-four">
+            <img src="img/photography/20260716_131203.jpg" alt="Sports photography" />
+          </a>
+          <div class="project-info">
+            <p>Img</p>
+            <h3>Sports</h3>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="design">
+          <a href="img/photography/VLB (ENH)-6198.jpg" target="_blank" rel="noopener noreferrer" class="project-visual visual-five">
+            <img src="img/photography/VLB (ENH)-6198.jpg" alt="Christening photography" />
+          </a>
+          <div class="project-info">
+            <p>Img</p>
+            <h3>Christening</h3>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="branding">
+          <a href="img/photography/Wedding.jpg" target="_blank" rel="noopener noreferrer" class="project-visual visual-six">
+            <img src="img/photography/Wedding.jpg" alt="Wedding photography" />
+          </a>
+          <div class="project-info">
+            <p>Img</p>
+            <h3>Wedding</h3>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-wrap contact">
+      <p class="small-label">GET IN TOUCH</p>
+      <h2>Let's work together<span>.</span></h2>
+      <p>
+        Have a project in mind? Send me a message and let's talk.
+      </p>
+
+      <a class="email" href="mailto:gabmacayaon01@gmail.com">gabmacayaon01@gmail.com</a>
+      <a class="phone" href="tel:+639354252120">+639354252120</a>
+
+      <div class="contact-links">
+        <!-- <a href="#">GitHub</a> -->
+        <a href="#">LinkedIn</a>
+        <a href="#">Instagram</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© <span id="current-year"></span> Gabriel Macayaon. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
