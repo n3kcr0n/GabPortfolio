@@ -27,9 +27,12 @@ filters.forEach(filter => {
     filter.classList.add("active");
 
     const category = filter.dataset.filter;
+    filters.forEach(item => {
+      item.setAttribute("aria-pressed", String(item === filter));
+    });
 
     projects.forEach(project => {
-      const show = category === "all" || project.dataset.category === category;
+      const show = project.dataset.category === category;
       project.style.display = show ? "block" : "none";
     });
   });
